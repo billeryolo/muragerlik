@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="icon" href="images/logo.png" type="image/logo">
+    <title>Мұрагерлік құқық</title>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <a href="index.html"> <img src="images/logo.png" alt="logo"> </a>
+            <ul>
+                <li><a href="index.html">Басты&nbsp;бет</a></li>
+                <li><a href="about.html">Мұрагерлік&nbsp;құқық&nbsp;туралы</a></li>
+                <li><a href="howto.html">Мұраны&nbsp;қалай&nbsp;алады?</a></li>
+                <li><a href="sequence.html">Мұрагерлік&nbsp;кезегін&nbsp;анықтау</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="glossary.html">Глоссарий</a></li>
+                <li><a href="contact.html">Байланыс</a></li>
+            </ul>
+        </div>
+
+        <div class="text">
+                <h1>Мұрагерлік кезегін анықтау</h1>
+                <h2 style="font-weight: normal; margin-bottom: 20px;">Заң бойынша мұраны алуға құқық мұрагерлік кезек арқылы анықталады. Мұрагерлік кезек сегіз сатыдан тұрады. Мұра бір кезектегі мұрагерлер арасында бөлінеді және басқа кезектегі мұрагерлер мұраны тек егер одан жоғары кезектегі мұрагерлер жоқ болған жағдайда алады (Мысалы, екінші кезектегі мұрагерлер мұраны бірінші кезектегі мұрагерлер болмаған жағдайда алады). </h2>
+                <h1 style="max-width: 800px; font-size: 30px;">Өзіңіздің мұрагерлік кезегіңізді анықтау үшін төмендегі тізім арқылы мұра қалдырушыға кім болып келетінізді таңдаңыз.</h2>
+        </div>
+        <div class="dropdown-section">
+            <h2>Мұрагерлік кезекті анықтау</h2>
+            <label for="relationship">Мұра қалдырушыға кім болып табыласыз?</label>
+            <select id="relationship">
+                <option value="">Таңдаңыз...</option>
+        
+                <!-- 1-кезек -->
+                <option value="balasy">Баласы</option>
+                <option value="zhubaiy">Жұбайы</option>
+                <option value="akesi">Әкесі</option>
+                <option value="anasy">Анасы</option>
+        
+                <!-- 1-кезек (ұсыну құқығы бойынша) -->
+                <option value="nameresi">Немересі</option>
+                <option value="shoberesi">Шөбересі</option>
+        
+                <!-- 2-кезек -->
+                <option value="tuğan-agasy">Туған ағасы</option>
+                <option value="tuğan-baýyry">Туған бауыры</option>
+                <option value="tuğan-apatasi">Туған әпкесі</option>
+                <option value="tuğan-qarindasy">Туған қарындасы (сіңлісі)</option>
+                <option value="atasy">Атасы</option>
+                <option value="azhesi">Әжесі</option>
+        
+                <!-- 2-кезек (ұсыну құқығы бойынша) -->
+                <option value="jiieni">Жиені (племянник)</option>
+                <option value="nemere-inisi">Немере іні-қарындасы (племянник)</option>
+        
+                <!-- 3-кезек -->
+                <option value="ake-ded">Мұра қалдырушының әкесiмен бiрге туған ағасы (дядя)</option>
+                <option value="ana-tetya">Мұра қалдырушының әкесiмен бiрге туған апасы (тетя)</option>
+                <option value="nagashy-aga">Нағашы ағасы (дядя)</option>
+                <option value="nagashy-tetya">Нағашы апасы (тетя)</option>
+        
+                <!-- 3-кезек (ұсыну құқығы бойынша) -->
+                <option value="nemere-aga">Немере аға-iнiсі (двоюродный брат)</option>
+                <option value="nemere-apasy">Немере апа-қарындасы (двоюродная сестра)</option>
+        
+                <!-- 4-кезек -->
+                <option value="argy-atasy">Арғы атасы (прадедушка)</option>
+                <option value="argy-azhesi">Арғы әжесі (прабабушка)</option>
+        
+                <!-- 5-кезек -->
+                <option value="shobere-ini">Шөбере іні-қарындасы (двоюродный внук/внучка)</option>
+                <option value="jienshary">Жиеншары (двоюродный внук/внучка)</option>
+                <option value="atasy-agasy">Атасының немесе әжесінің туған ағасы/бауыры (двоюродный дедушка)</option>
+                <option value="azhesi-karindasy">Атасының немесе әжесінің туған қарындасы/сіңлісі (двоюродная бабушка)</option>
+        
+                <!-- 6-кезек -->
+                <option value="pravnuki">Мұра қалдырушының шөбере iнi-қарындастарының, жиеншарларының баласы (двоюродные правнуки и правнучки)</option>
+                <option value="dvojur-plem">Мұра қалдырушының немере аға-iнiлерi мен апа-қарындастарының балалары (двоюродные племянники и племянницы)</option>
+                <option value="dvojur-dyadi">Мұра қалдырушының екi атадан қосылатын аталары мен әжелерiнiң баласы (двоюродные дяди и тети)</option>
+        
+                <!-- 7-кезек -->
+                <option value="ogey-ini">Өгей аға-інісі (сводный брат)</option>
+                <option value="ogey-apasy">Өгей апа-қарындасы (сводная сестра)</option>
+                <option value="ogey-uly">Өгей ұлы (пасынок)</option>
+                <option value="ogey-kyzy">Өгей қызы (падчерица)</option>
+                <option value="ogey-ake">Өгей әкесі (отчим)</option>
+                <option value="ogey-sheshe">Өгей шешесі (мачеха)</option>
+        
+                <!-- 8-кезек -->
+                <option value="asiyraydy">Мұра қалдырушының асырауындағы еңбекке жарамсыз адам</option>
+                
+
+                
+            </select>
+            <p id="result" class="result-text"></p>
+            <div class="button-container">
+                <button onclick="determineHeir()">Анықтау</button>
+            </div>
+            
+        </div>
+        <section class="inheritance-by-representation", id="usynu">
+            <h2>Ұсыну құқығы бойынша мұрагерлік деген не?</h2>
+            <p>
+                Ұсыну құқығы бойынша мұрагерлік – мұраны заң бойынша алуға құқықтары болған, 
+                алайда мұра ашылғанға дейін немесе мұра қалдырушымен бір уақытта қайтыс болған 
+                адамдардың мұраны алу құқығының оның ұрпақтарына өтуі.
+            </p>
+        
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Кезек</th>
+                            <th>Мұрагер (негізгі)</th>
+                            <th>Мұрагер (ұсыну құқығы бойынша)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Баласы, Жұбайы, Әкесі, Анасы</td>
+                            <td>Немересі, Шөбересі</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Туған ағасы, бауыры, әпкесі, қарындасы, Атасы, Әжесі</td>
+                            <td>Немере іні-қарындасы, Жиені</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Мұра қалдырушының әкесімен/анасымен бірге туған ағасы мен апасы, Нағашы ағасы/апасы</td>
+                            <td>Немере аға-iнiсі, Немере апа-қарындасы</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Арғы атасы, Арғы әжесі</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Шөбере іні-қарындасы, Жиеншары, Двоюродный дедушка/бабушка</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Двоюродные правнуки, племянники, дяди и тети</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Өгей аға-інісі, апа-қарындасы, ұлы, қызы, әкесі, шешесі</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Асырауындағы еңбекке жарамсыз адам</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <img src="images/tree.png" alt="Ұсыну құқығы кестесі"
+            class="clickable-image" id="thumbnail">
+   
+
+       <div id="image-modal" class="modal">
+           <span class="close">&times;</span>
+           <img class="modal-content" id="full-image">
+       </div>
+        </section>        
+        
+    </header>
+    <script>
+        const modal = document.getElementById("image-modal");
+        const thumbnail = document.getElementById("thumbnail");
+        const modalImg = document.getElementById("full-image");
+        const span = document.getElementsByClassName("close")[0];
+    
+        thumbnail.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Site Logo">
+                    <p>Мұрагерлік құқық бойынша ақпараттық портал</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Басты бет</a>
+                    <a href="about.html">Мұрагерлік құқық туралы</a>
+                    <a href="howto.html">Мұраны қалай алады?</a>
+                    <a href="sequence.html">Мұрагерлік кезегін анықтау</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="glossary.html">Глоссарий</a>
+                    <a href="contact.html">Байланыс</a>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-envelope"></i> info@inheritance.kz</p>
+                    <p><i class="fa-solid fa-phone"></i> +7 (700) 123 4567</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Астана, Қазақстан</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Мұрагерлік құқық. Барлық құқықтар қорғалған.</p>
+            </div>
+        </footer>
+        <style>
+            .text {
+            padding-top: 100px;
+            max-width: 800px;
+            margin: 0 auto; 
+            text-align: center; 
+            left: 0;
+            right: 0;
+            }
+            .text h2{
+                margin: 0;
+            }
+            .dropdown-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px;
+}
+button{
+    display:inline;
+}
+div.button-container button:hover{
+    background-color: #85aa9b;
+}
+        </style>
+        
+</body>
+</html>

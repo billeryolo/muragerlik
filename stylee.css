@@ -1,0 +1,381 @@
+    /* Importing Google font - Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    }
+    html{
+        background-color: #FFF;
+    }
+    .header{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        position: block;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #FFF;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+        display: flex;              
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 100px;        
+    }
+    img{
+        padding-left: 100px;
+        max-width: 100%;
+        height: 55px;
+
+
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar li{
+        margin-right: 50px;
+        list-style: none;
+        display: flex;
+    }
+    .navbar li a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: #1d1d1d;
+        text-transform: capitalize;
+        display: flex;
+    }
+    .navbar li a::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: black;
+        margin: auto;
+    }
+    .navbar li a:hover::after{
+        width: 100%;
+    }
+    .icon a{
+        font-size:20px;
+        margin-right: 20px;
+        color: black;
+    
+    }
+    .text h2{
+        margin-left: 20px;
+        width: 800px;
+    }
+    .text ul{
+        margin-left: 40px;
+    }
+    .text{
+        padding-top: 100px;
+        position: relative;
+        top: 35%;
+        left: 12%;
+        right: 12%;
+        margin-bottom: 50px;
+        margin-right: 50px;
+        color: #383D3B;
+        width: auto;
+    }
+    .text h1{
+        color: #383D3B;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    .text p{
+        font-size: 17px;
+        color: #414447;
+        margin-bottom: 20px;
+        max-width: 800px;
+        margin-left: 40px;
+    }
+    button{
+        padding: 10px 40px;
+        text-transform: uppercase;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        display: block;
+        width: 500px;
+        height: auto;
+    }
+    button:hover{
+        background-color: #fff;
+        color: black;
+    }
+
+    .guide {
+        width: 80%; /* Можно ограничить ширину */
+        max-width: 800px; /* Максимальная ширина для блока */
+    }
+    .faq-item {
+        margin-bottom: 25px;
+        font-weight: normal;
+    }
+    
+    .faq-item h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: #000000;
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+    .faq-item p, .faq-item ul {
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: normal;
+        padding-left: 15px;
+    }
+    
+    .faq-item b {
+        text-transform:uppercase;
+    }
+
+    .faq-item ul {
+        padding-left: 45px;
+        margin-bottom: 10px;
+    }
+    
+    .faq-item li {
+        margin-bottom: 10px;
+    }
+    .dropdown-section {
+        max-width: 600px;
+        margin: 60px auto;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background: #f9f9f9;
+        font-family: sans-serif;
+    }
+    
+    .dropdown-section select, 
+    .dropdown-section button {
+        padding: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+        width: 560px;
+    }
+    
+    .dropdown-section button {
+        cursor: pointer;
+        background-color: #588b76;
+        color: white;
+        border: none;
+        border-radius: 6px;
+    }
+    
+    .dropdown-section .result-text {
+        margin-top: 20px;
+        font-weight: bold;
+        max-width: 500px;
+    }
+    .inheritance-by-representation {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        font-family: Arial, sans-serif;
+    }
+    
+    .inheritance-by-representation h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .inheritance-by-representation p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .table-wrapper {
+        overflow-x: auto;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    th, td {
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #f4f4f4;
+    }
+    .clickable-image {
+        margin-top: 30px;
+        padding-left: 20px;
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        transition: transform 0.2s;
+    }
+
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.85);
+    }
+    
+    .modal-content {
+        display: block;
+        margin: auto;
+        width: auto;
+        height: auto;
+        max-width: 95vw;
+        max-height: 90vh;
+        object-fit: contain;
+    }
+    
+    
+    .close {
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        size: 10%;
+    }
+       
+.faq-section {
+    padding: 40px 20px;
+    max-width: 900px;
+}
+
+.faq-container h2 {
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.faq-item p {
+    margin: 10px 0 0;
+    line-height: 1.6;
+}
+.footer {
+    background-color: #f2f2f2;
+    padding: 40px 20px 20px;
+    color: #333;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.footer-logo p {
+    margin-top: 10px;
+    max-width: 250px;
+}
+
+.footer-links a:hover {
+    color: #007BFF;
+}
+
+.footer-contact i {
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #777;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px 10px;
+    max-width: 300px;
+    color: #333;
+}
+.footer-links a {
+    width: 45%;
+}
+div.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer-logo img{
+    padding: 0;
+}
+.navbar li a:hover{
+    background-color: #fff;
+    color: rgb(126, 126, 126);
+}
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+
+a:link {
+    color: inherit; 
+}
+
+
+a:visited {
+    color: inherit; 
+}
