@@ -31,17 +31,15 @@
         padding: 20px 100px;        
     }
     img{
-        padding-left: 100px;
         max-width: 100%;
         height: 55px;
 
 
     }
     .navbar ul{
-        display: flex;
+        display: contents;
     }
     .navbar li{
-        margin-right: 50px;
         list-style: none;
         display: flex;
     }
@@ -186,7 +184,6 @@
     .dropdown-section .result-text {
         margin-top: 20px;
         font-weight: bold;
-        max-width: 500px;
     }
     .inheritance-by-representation {
         max-width: 800px;
@@ -327,8 +324,9 @@
             .welcome-image-banner {
                 position: relative;
                 width: 100%;
-                height: 600px;
+                height: 800px;
                 overflow: hidden;
+                margin-top: 96px;
             }
             
             .banner-img {
@@ -389,7 +387,6 @@
             
             
             .footer-logo p {
-                margin-top: 10px;
                 max-width: 250px;
             }
             
@@ -441,4 +438,139 @@
             div.text p a:hover{
                 color: #0088cc;
             }
-           
+            @media (max-width: 920px) {
+                .navbar {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 10px 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            
+                .navbar ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 10px;
+                }
+            
+                .navbar li {
+                    padding: 0;
+                }
+            
+                .navbar li a {
+                    font-size: 14px;
+                    padding: 6px 8px;
+                }
+            
+                .banner-text {
+                    font-size: 1.2rem;
+                    padding: 0 10px;
+                    text-align: center;
+                }
+            
+                .welcome-image-banner {
+                    height: 300px;
+                    margin-top: 80px;
+                }
+            
+                .text h1 {
+                    font-size: 18px;
+                    padding: 0 10px;
+                }
+            
+                .text p {
+                    font-size: 14px;
+                    padding: 0 10px;
+                }
+            
+                button, .guide-buttons button, .dropdown-section button {
+                    width: 100%;
+                    max-width: 100%;
+                    font-size: 14px;
+                }
+            
+                .footer-content {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+            
+                .footer-links, .footer-contact {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            
+                .dropdown-section select, 
+                .dropdown-section button {
+                    width: 100%;
+                }
+            
+                .contact-section {
+                    margin-top: 100px;
+                }
+            }
+            .hamburger {
+                display: none;
+                font-size: 28px;
+                cursor: pointer;
+                z-index: 2000;
+                padding: 10px;
+            }
+            
+            .sidebar {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: #fff;
+                overflow-x: hidden;
+                transition: 0.3s;
+                padding-top: 60px;
+                z-index: 2001;
+                box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+            }
+            
+            .sidebar a {
+                display: block;
+                padding: 14px 24px;
+                text-decoration: none;
+                color: #333;
+                font-size: 18px;
+            }
+            
+            .sidebar a:hover {
+                background-color: #f1f1f1;
+            }
+            
+            .sidebar .close-btn {
+                position: absolute;
+                top: 5px;
+                right: 20px;
+                font-size: 50px;
+                cursor: pointer;
+            }
+            
+            .sidebar.active {
+                width: 250px;
+            }
+            
+            @media (max-width: 920px) {
+                .navbar ul {
+                    display: none;
+                }
+            
+                .hamburger {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+
+            
+            
+            
+            
